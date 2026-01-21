@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Date</title>
+
+    <script>
+        function displayDate() {
+            // Get current date
+            var today = new Date();
+
+            // Show pop-up alert
+            alert("Button clicked! Displaying today's date.");
+
+            // Display date in textbox
+            document.getElementById("dateBox").value = today.toDateString();
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Display Date</h2>
+
+    <!-- Textbox -->
+    <input type="text" id="dateBox" placeholder="Date will appear here" readonly>
+
+    <br><br>
+
+    <!-- Button with onclick -->
+    <button onclick="displayDate()">Display Date</button>
+</body>
+</html>
